@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+<title>HiNAG</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link rel="stylesheet" href="font/fonts.css" type="text/css"/>
+<link rel="stylesheet" href="css/include.css" type="text/css"/>
+<link rel="stylesheet" href="css/default.css" type="text/css"/>
+<link rel="stylesheet" href="css/slick.css" type="text/css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="stylesheet" href="css/loading.css" type="text/css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="shortcut icon" href="#" type="image/x-icon"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/IE9.js"></script>
+<![endif]-->
+<!--loading-->
+<script>
+    /*
+    $(window).load(function () {
+        $('#loading').delay(2500).fadeOut(500);
+    });
+    */
+</script>
+<!---->
+<script type="text/javascript">
+    $(document).ready(function(){
+        
+        $(".slider").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed:3000,
+        arrows:false,
+        });
+    })
+    
+    
+    $(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 4000);
+});
+</script>
+<style>
+    .fadein { position:relative; height:820px; width:100%;}
+    .fadein img { position:absolute;}
+</style>
+</head>
+<body>
+<!--로딩화면-->
+<!--로딩화면-->
+    
+<!--전체시작-->
+<div id="wrap">
+
+<!--헤더시작-->
+<header id="header">
+    <!--헤더탑-->
+    <div class="inner cf">
+        <!--로고시작-->
+        <h1>
+            <a href="index.html"><img src="images/common/logo.png" alt="로고"/></a>
+        </h1>
+        <!--로고끝-->
+        <!--gnb시작-->
+        <ul class="gnb cf">
+            <li class="gnbAct">
+                <a href="sub/company.html" class="gndName">회사소개</a>
+                <!--2차메뉴-->
+                <ul class="lnb">
+                    <li class="lnbS">
+                        <p>기업정보</p>
+                        <!--3차메뉴-->
+                        <ul class="lnbSlnb">
+                            <li><a href="sub/company.html">&#150; HiNAG WAY</a></li>
+                            <li><a href="#">&#150; CI</a></li>
+                            
+                        </ul>
+                    </li>
+                    <!--<li><a href="#">CEO인사말</a></li>-->
+                </ul>
+            </li>
+            <li class="gnbAct">
+                <a href="sub/nicotine01.html" class="gndName">제품</a>
+                <!--2차메뉴-->
+                <ul class="lnb">
+                    <li class="lnbS">
+                        <p>니코틴</p>
+                        <!--3차메뉴-->
+                        <ul class="lnbSlnb">
+                            <li><a href="sub/nicotine01.html">&#150; 줄기니코틴</a></li>
+                            <li><a href="sub/nicotine02.html">&#150; 솔트니코틴</a></li>
+                        </ul>
+                    </li>
+                    <li class="lnbS">
+                        <p>액상</p>
+                        <!--3차메뉴-->
+                        <ul class="lnbSlnb">
+                            <li><a href="sub/juice01.html">&#150; 단일액상</a></li>
+                            <li><a href="sub/juice02.html">&#150; 조합액상</a></li>
+                            <li><a href="#">&#150; 아이스액상</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub/flavour.html">향료</a></li>
+                    <li><a href="sub/base01.html">베이스</a></li>
+                    <li>
+                        <a href="sub/oem01.html">OEM</a>
+                    </li>
+                    <li><a href="sub/etc.html">기타/기기</a></li>
+                </ul>
+            </li>
+            <li class="gnbAct">
+                <a href="sub/license.html" class="gndName">라이센스</a>
+                <!--2차메뉴-->
+                <ul class="lnb">
+                    <li><a href="sub/license.html">검사보고서/인증서</a></li>
+                </ul>
+            </li>
+            <li class="gnbAct">
+                <a href="sub/mag.html" class="gndName">홍보</a>
+                <ul class="lnb">
+                    <li><a href="sub/mag.html">매거진</a></li>
+                    <li><a href="sub/sns.html">SNS</a></li>
+                    <li><a href="sub/blog.html">블로그</a></li>
+                    <!--<li><a href="sub/youtube.html">유튜브</a></li>-->
+                </ul>
+            </li>
+            <li class="gnbAct">
+                <a href="sub/map.html" class="gndName">고객지원</a>
+                <!--2차메뉴-->
+                <ul class="lnb">
+                    <!--<li><a href="sub/qna.html">자주묻는질문</a></li>-->
+                    <li><a href="sub/map.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="gnbAct" class="gndName">
+                <a href="sub/calc.html">액상계산기</a>
+            </li>
+        </ul>
+        <!--gnb끝-->
+    </div>
+</header>
+<!--헤더끝-->
+    
+<!--컨테이너시작-->
+<div id="container">
+    <!--메인슬라이더TXT시작-->
+    <div class="mainSliderTxt">메인슬라이더텍스트</div>
+    <!--메인슬라이더TXT끝-->
+    <!--메인슬라이더시작-->
+    <div class="fadein">
+        <img src="images/mainSlider01.jpg" alt="메인슬라이더배경"/>
+        <img src="images/mainSlider02.jpg" alt="메인슬라이더배경"/>
+        <img src="images/mainSlider03.jpg" alt="메인슬라이더배경"/>       
+        <img src="images/mainSlider04_02.jpg" alt="메인슬라이더배경"/>    
+        <img src="images/mainSlider05.jpg" alt="메인슬라이더배경"/>
+        <img src="images/mainSlider07.jpg" alt="메인슬라이더배경"/>     
+    </div>
+    <!--메인슬라이더끝-->
+    <!--mainRow01시작-->
+    <div class="mainRow01">
+        <div class="row01Box">
+          <!--  <h3>MAXIMUM SOLUTION</h3>
+            <p>한 걸음 먼저, 한 차원 높게 다가서는 하이낙의 내일은</p>
+            <p>여러분에게 보다 높은 가치를 선사합니다.</p>-->
+        </div>
+    </div>
+    <!--mainRow01끝-->
+    <!--mainRow02시작-->
+    <div class="mainRow02">
+        <div class="inner">
+            <h3>HiNAG's WORLD</h3>
+            <p>하이낙과 즐거운 여행이 되시길 바랍니다.</p>
+            <div class="cf">
+                <!--메뉴-->
+                <div class="leftBox cf">
+                    <!--공지시작-->
+                    <!--<div class="row02Box mBox cf">
+                        <a href="#">
+                            <img src="http://placehold.it/580x330" alt="메뉴이미지"/>
+                            <div class="menuInfo">
+                                <h4>NOTICE</h4>
+                              
+                            </div>
+                        </a>
+                    </div>-->
+                    <!--공지끝--->
+                    <!--공지시작-->
+                    <div class="notice">
+                        <div class="row02Box mBox cf">
+                            <div class="menuInfo"><h4>NOTICE</h4></div>
+                            <ul>
+                                <li>
+                                    <a href="#">하이낙에 오신것을 환영합니다.</a>
+                                    <span>05-08</span>
+                                </li>
+                                <li>
+                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
+                                    <span>05-08</span>
+                                </li>
+                                <li>
+                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
+                                    <span>05-08</span>
+                                </li>
+                                <li>
+                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
+                                    <span>05-08</span>
+                                </li>
+                                <li>
+                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
+                                    <span>05-08</span>
+                                </li>
+                                <li>
+                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
+                                    <span>05-08</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--공지끝-->
+                    <div class="leftBottomBox cf">
+                    <div class="row02Box sBox">
+                        <a href="#">
+                            <img src="http://placehold.it/270x330" alt="메뉴이미지"/>
+                            <div class="menuInfo">
+                                <h4>CONTECT US</h4>
+                              
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row02Box sBox sBox02">
+                        <a href="#">
+                            <img src="http://placehold.it/270x330" alt="메뉴이미지"/>
+                            <div class="menuInfo">
+                                <h4>Menu</h4>
+                              
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <!--ABOUT-->
+                <div class="row02Box lBox">
+                    <a href="sub/company.html">
+                        <img src="images/main_aboutImg02.jpg" alt="메뉴이미지"/>
+                        <div class="menuInfo">
+                            <h4>ABOUT</h4>
+                            
+                        </div>
+                    </a>
+                </div>
+                <!--ABOUT-->
+            <!--메뉴끝-->
+            </div>
+        </div>
+    </div>
+    <!--mainRow02끝-->
+    <!--mainRow03시작-->
+    <div class="mainRow03">
+        <div class="mainRow03Txt">메인슬라이더텍스트</div>
+        <div class="slider">
+            <div>
+                <img src="images/mainRow03Bg02.jpg" alt="슬라이더이미지"/>
+            </div>
+            <div>
+                <img src="images/mainRow03Bg01.jpg" alt="슬라이더이미지"/>
+            </div>
+        </div>
+    </div>
+    <!--mainRow03끝-->
+    <!--mainRow04시작-->
+    <div class="mainRow04">
+        <div class="inner">
+            <h3>PRODUCT</h3>
+                <div class="row04Info cf">
+                    <div class="row04 row04Box01">
+                        <a href="sub/juice01.html">
+                            <div class="row04Tit">
+                                <img src="images/mainRow04Tit01.png" alt="제품사진이름"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row04 row04Box02">
+                        <a href="sub/nicotine01.html">
+                            <div class="row04Tit">
+                                <img src="images/mainRow04Tit02.png" alt="제품사진이름"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row04 row04Box03">
+                        <a href="sub/nicotine02.html">
+                           <div class="row04Tit">
+                                <img src="images/mainRow04Tit03.png" alt="제품사진이름"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            <!--<div class="row04Info cf">
+                <div class="row04 row04Box01">
+                    <a href="#">
+                        <img src="images/info360.jpg" alt="제품사진" class="off"/>
+                        <img src="images/info360_on.jpg" alt="제품사진" class="on"/>
+                        <div><img src="images/mainRow04Tit01.png" alt="제품사진이름"/></div>
+                    </a>
+                </div>
+                <div class="row04">
+                    <a href="#">
+                        <img src="http://placehold.it/360x360" alt="제품사진"/>
+                        <div><img src="images/mainRow04Tit02.png" alt="제품사진이름"/></div>
+                    </a>
+                </div>
+                <div class="row04">
+                    <a href="#">
+                        <img src="http://placehold.it/360x360" alt="제품사진"/>
+                        <div><img src="images/mainRow04Tit03.png" alt="제품사진이름"/></div>
+                    </a>
+                </div>
+            </div>-->
+            <!--<div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="aos-item__inner">
+                    <ul class="row04Info cf">
+                        <li class="row04 row04Box01">
+                            <a href="#" target="_blank">
+                                <img src="images/info360.jpg" class="off" alt="제품사진"/>
+                                <div class="on"><img src="images/info360_on.jpg"/>
+                                </div>
+                                <h4 class="row03BoxTit"><img src="images/mainRow04Tit01.png"/></h4>
+                            </a>
+                        </li>
+                        <li class="row04">
+                            <a href="#" target="_blank">
+                                <img src="images/info360.jpg" class="off" alt="제품사진"/>
+                                <div class="on"><img src="images/info360_on.jpg"/>
+                                </div>
+                                <h4 class="row03BoxTit"><img src="images/mainRow04Tit02.png"/></h4>
+                            </a>
+                        </li>
+                        <li class="row04">
+                            <a href="#" target="_blank">
+                                <img src="images/info360.jpg" class="off" alt="제품사진"/>
+                                <div class="on"><img src="images/info360_on.jpg"/>
+                                </div>
+                                <h4 class="row03BoxTit"><img src="images/mainRow04Tit03.png"/></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <!--mainRow04끝-->
+    <!--footer시작-->
+    <div id="footer">
+        <!--footerTop시작-->
+        <div class="footerTop inner">
+            <ul class="footerBnr">
+                <li><a href="#"><img src="images/common/footerBnrLogo01.png"/></a></li>
+                <li><a href="#"><img src="images/common/footerBnrLogo02.png"/></a></li>
+                <li><a href="#"><img src="images/common/footerBnrLogo03.png"/></a></li>
+                <li><a href="#"><img src="images/common/footerBnrLogo04.png"/></a></li>
+            </ul>
+        </div>
+        <!--footerTop끝-->
+        <!--footerBottom시작-->
+        <div class="footerBottom">
+            <div class="footerInfo inner cf">
+                <!--footerLofo시작-->
+                <div class="footerLogo">
+                    <a href="index.html">
+                        <img src="images/common/footerLogo.png" alt="푸터로고"/>
+                    </a>
+                </div>
+                <!--footerLogo끝-->
+                <div class="infoTxt">
+                    <ul class="cf">
+                        <li>(유)하이낙</li>
+                        <li>46332 부산광역시 금정구 공단로 70 (금사동) 1층</li>
+                        <li>대표 : 박현수</li>
+                        <li>사업자등록번호 : 268-88-00977</li>
+                    </ul>
+                    <ul class="cf">
+                        <li class="first">대표전화 : 070-4249-6380</li>
+                        <li>팩스 : 0504-488-6380</li>
+                    </ul>
+                    <div>
+                        <p>COPYTIGHT &#169;2019 HiNAG. ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+                <ul class="footerSns">
+                    <li>
+                        <a href="#">
+                            <img src="images/common/footerSnsLogo01.png" alt="페이스북"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/common/footerSnsLogo02.png" alt="인스타그램"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/common/footerSnsLogo03.png" alt="블로그"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--footerBottom끝-->
+    </div>
+    <!--footer끝-->
+</div>
+<!--컨테이너끝-->
+</div>
+    
+<!--전체끝-->
+</body>
+</html>
+
+
+

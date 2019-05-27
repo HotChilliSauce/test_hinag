@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>DIY E-Liquid Recipe Mixing Calculator - HiLIQ.COM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<style type="text/css">
+
+body, table, tr, th, td{font-family: "Myriad Pro", "Myriad Pro Cond", "Myriad Pro Light", Verdana, Geneva, sans-serif;font-weight: normal;white-space:nowrap;margin:0px;padding:0px;border:none;color:#000000;}
+.tblA{width:100%;}
+.thA{
+	text-align:center;
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+	height:85px;
+}
+.thz{text-align:center;padding:0px 10px 0px 60px;line-height:64px;font-weight:bold;font-size:50px;font-style:oblique;}
+.thAp{font-style:oblique;font-weight:bold;font-size:16px;color:#eeeeee;line-height:18px;text-indent:80px;}
+a.title:link,a.title:visited{text-decoration:none;color:#eeeeee;}
+a.title:hover{color:#c0c0c0;}
+.menuborder{font-weight:bold;font-size:12px;width:100%;border:1px solid #000000;padding:8px;}
+a#menuheader{color:#eeeeee;font-size:20px;}
+a.menu:link,a.menu:visited,a.menu:hover{text-decoration:none;color:#eeeeee;background:#000000;display:block;}
+a.menu:visited{color:#c0c0c0;}
+a.menu:hover{color:#000000;background:#eeeeee;}
+.main{width:100%;font-size:16px;text-align:center;color:#eeeeee;padding:20px 0px 0px 0px;}
+.out{width:600px;border:1px solid #000000;}
+.in_in,.in_b{
+	width:100%;
+	background-color:#FFF;
+	font-size:16px;
+	line-height:15px;
+}
+.in_b{width:15px;}
+.p_iner{background:#FFF;;}
+.in_iner{background:#FFF;}
+.in_tba{width:100%;font-size:20px;font-weight:bold;font-style:oblique;line-height:22px;background:#FFF;text-align:center;}
+.tbcal{
+	width:100%;
+	background:#eeeeee;
+	border-width:10px;
+	border-color:#FFF;
+	border-style:none solid;
+}
+a.new:link{color:#eeeeee;}
+a.new:visited{color:#c0c0c0;}
+a.new:hover{color:#ffffff;}
+.links{font-size:13px;line-height:14px;font-weight:bold;;margin:1px;color:#eeeeee;}
+a.links:link{color:#eeeeee;}
+a.links:visited{color:#c0c0c0;}
+a.links:hover{color:#ffffff;}
+a.warning:link{color:#ff0000;}
+a.warning:visited{color:#ff0000;}
+a.warning:hover{color:#0000ff;}
+.tblC_tdA{text-align:center;font-size:12px;color:#eeeeee;}
+.pcal_thead,.ead{font-size:18px;text-align:center;font-weight:bold;font-style:normal;line-height:20px;background:#DEF;}
+.ead{background:#FFF;;}
+.tbcal_tdA,.pcal_tdA{font-size:11px;background:#eeeeee;text-align:left;padding:1px 5px 1px 0px;}
+.pcal_tdA{
+	background-color: #FFF;
+}
+.l_tdA,.p_tdA{font-size:11px;background:#eeeeee;text-align:left;padding:1px 2px 1px 5px;}
+.p_tdA{
+	background-color: #FFF;
+}
+.intable{width:100%;background:#FFF;;}
+.fAbt,.fAAbt{font-size:11px;font-weight:bold;text-align:left;padding:2px 6px;line-height:15px;background:#fff;}
+.fAAbt{text-align:right;}
+.fAb,.sAb{font-size:11px;text-align:left;padding:2px 6px;line-height:15px;background:#ffffff;}
+.sAb{background:#eeeeee;}
+.fAAbr,.sAAbr{font-size:11px;text-align:right;padding:2px 6px;line-height:15px;background:#ffffff;}
+.sAAbr{background:#eeeeee;}
+.fdrp,.sdrp{
+	font-size:11px;
+	color:#0099ff;
+	text-align:left;
+	padding:2px 0px;
+	line-height:15px;
+	background-color: #fff;
+}
+.sdrp{background:#eeeeee;}
+.fml,.sml{font-size:11px;color:#3599D5;text-align:left;padding:2px 0px;line-height:15px;background:#ffffff;}
+.sml{background:#eeeeee;}
+.c_Abt{font-size:11px;font-weight:bold;text-align:center;padding:2px 10px;line-height:15px;background:#eeeeee;}
+.ass,.bss{font-size:11px;background:#ffffff;text-align:center;border:1px inset #ddd;line-height:13px;}
+.bss{background:#fff;}
+.sl{font-size:11px;background:#ffffff;text-align:left;border:1px inset #f5f5f5;line-height:13px;padding:1px 3px;}
+.tbcal_tdsss{font-size:12px;font-weight:bold;background:#ffffff;text-align:center;border:1px inset #f5f5f5;line-height:13px;}
+.enter{font-size:12px;font-weight:bold;background:#424147;text-align:center;padding:5px 5px;line-height:14px; color:#fff;}
+.div{
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffea00;
+	text-align: left;
+	line-height: 13px;
+}
+.warn{font-size:11px;background:#FFF;;text-align:center;line-height:20px;}
+.fade_a, .fade_b{
+	text-align:center;
+	font-style:normal;
+	font-weight:bold;
+	font-size:20px;
+	height:30px;
+	background-color: #FFF;
+	background-repeat: repeat-x;
+	background-position: 0px -105px;
+	
+}
+.fade_b{
+	font-size:18px;
+	height:25px;
+	background-color: #FFF;
+	background-repeat: repeat-x;
+	background-position: 0px -135px;
+}
+.fade_c, .fade_m, .fade_e{
+	text-align:center;
+	font-size:11px;
+	height:20px;
+	background-color: #FFF;
+	background-repeat: repeat-x;
+	background-position: 0px -85px;
+}
+.fade_m{
+	text-align:left;
+	padding:1px 2px 1px 5px;
+	height:25px;
+	background-color: #FFF;
+	background-repeat: repeat-x;
+	background-position: 0px -160px;
+}
+.fade_e{
+	font-weight:bold;
+	padding:2px 0px;
+	height:20px;
+	background-color: #FFF;
+/*	background-image: url(img/one.png);*/
+	background-repeat: repeat-x;
+	background-position: 0px -185px;
+}
+/*.book{font-size:14px;color:#ff0000;text-align:center;font-weight:bold;background:#FFF; url('img/one.png') repeat-x 0px -160px;height:25px;}*/
+.inone,.intwo{font-size:13px;padding:0px 0px;background:#FFF;;color:#ff0000;text-align:center;font-weight:bold;}
+.intwo{color:#0000ff;}
+.lr_blink{font-size:14px;padding:0px 10px;background:#FFF;;color:#ff0000;text-decoration:blink;text-align:center;font-weight:bold;}
+.amounta,.amountb{font-size:18px;padding:0px 0px;background:#FFF;;color:#ff0000;text-align:center;font-weight:bold;}
+.amountb{color:#0000ff;}
+</style>
+<script type="text/javascript" src="../js/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="../js/calc.js"></script>
+</head>
+
+<body style=" text-align:center;">
+<form action="" onsubmit="return calc()">
+<input type="hidden" value="10" name="i">
+<table cellspacing="0" class="out" summary="DIY E-Liquid Recipe Mixing Calculator" align="center" style="border:#ccc 50px solid; margin:auto; -moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:20px;
+border:1px solid ddd;
+-webkit-box-shadow:0 0 10px black;
+-moz-box-shadow:0 0 10px black;
+padding:10px;
+-webkit-box-shadow:2px 2px 2px #999;
+-moz-box-shadow:2px 2px 2px #999;">
+<tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td>
+<table cellspacing="0" class="tblA" summary="DIY E-Liquid Recipe Mixing Calculator">
+<tbody><tr><td valign="top" class="in_b"><img width="15" height="15" alt="rounded corner" src="/calculator/img/trans.gif" class="top_l">
+</td><td valign="top" class="in_in">
+</td><td valign="top" class="in_b"><img width="15" height="15" alt="rounded corner" src="/calculator/img/trans.gif" class="top_r">
+</td></tr><tr><td class="in_iner"></td><td class="in_iner"></td><td class="in_iner"></td></tr><tr><td class="in_b"></td><td class="in_in"></td><td class="in_b"></td></tr>
+</tbody></table>
+<table cellspacing="0" class="tblA" summary="DIY E-Liquid Recipe Mixing Calculator">
+<tbody><tr><td class="in_tba">
+</td></tr><tr>
+  <td class="fade_a" style="background-color:#424147; color:#FFEA00;">DIY E-Liquid  Recipe Mixing Calculator</td></tr>
+</tbody></table>
+<table cellspacing="0" class="tbcal" summary="DIY E-Liquid Recipe Mixing Calculator">
+<tbody><tr>
+  <td class="warn" colspan="5">&nbsp;</td></tr>
+<tr><td colspan="4" class="fade_b"><a name="anc">Enter Your Flavors and Amounts:</a>
+</td><td class="fade_b"><input type="button" class="enter" onclick="window.print(form)" value="Print this page" style=""></td></tr>
+<tr><td colspan="5" class="l_tdA"><input onkeyup="rec_x(rec,table_b)" id="rec" class="tbcal_tdsss" value="1 Name" maxlength="40" size="28" name="sfx"></td></tr>
+<tr><td class="p_tdA">Base Nicotine
+Density</td><td class="pcal_tdA"><input onkeyup="fix_one(a_one,table_b)" id="a_one" class="ass" value="36" maxlength="5" size="3" name="ai">mg
+</td><td class="pcal_tdA">
+</td><td colspan="2" class="pcal_thead" style="background-color:#FFEA00;"> Cost Calculator:</td></tr>
+<tr><td class="l_tdA"><span id="amount_nic">Target Nicotine Density</span>
+    </td><td onkeyup="chk_nic(a_two,amount_nic,nic_ha,nic_ha_l,nic_ha_r,nic_hb)" class="tbcal_tdA"><input onkeyup="fix_two(a_two,table_b)" id="a_two" class="ass" value="18" maxlength="5" size="3" name="bi">mg
+</td><td class="tbcal_tdA">
+</td><td class="tbcal_tdA"><span class="div">|</span> Nicotine E-Liquid
+</td><td class="tbcal_tdA">$<input onkeyup="money_a(a_mon,table_b)" id="a_mon" class="ass" value="20.00" maxlength="6" size="3" name="ci"> for <input onkeyup="mil_a(a_ml,table_b)" id="a_ml" class="ass" value="120" maxlength="5" size="2" name="di">ml</td></tr>
+<tr><td class="p_tdA"><span id="amount_make">Amount To Make</span>
+</td><td onkeyup="chk_amount(a_three,amount_make,inonea,intwoa,inonear,inoneal)" class="pcal_tdA"><input onkeyup="fix_three(a_three,table_b)" id="a_three" class="ass" value="10" maxlength="6" size="3" name="ei">ml
+</td><td class="pcal_tdA">
+</td>
+<td class="pcal_tdA"><span class="div">|</span> PG/VG/PG400</td><td class="pcal_tdA">$<input onkeyup="money_b(b_mon,table_b)" id="b_mon" class="ass" value="5.00" maxlength="6" size="3" name="fi"> for <input onkeyup="mil_b(b_ml,table_b)" id="b_ml" class="ass" value="240" maxlength="5" size="2" name="gi">ml</td></tr>
+<tr><td onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" class="l_tdA"><input onkeyup="flavor_a(fl_a,fl_az,table_b)" id="fl_a" class="sl" value="Water/Alcohol/PGA" maxlength="25" size="20" name="hi"> 
+</td><td class="tbcal_tdA"><input class="ass" onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" id="a" value="1" maxlength="5" size="3" name="ii">%
+</td><td class="tbcal_tdA">
+</td><td class="tbcal_tdA"><span class="div">|</span><span id="fl_az">Water/Alcohol/PGA</span> 
+</td><td class="tbcal_tdA">$<input onkeyup="money_d(d_mon,table_b)" id="d_mon" class="ass" value="10.00" maxlength="6" size="3" name="ji"> for <input onkeyup="mil_d(d_ml,table_b)" id="d_ml" class="ass" value="100" maxlength="5" size="2" name="ki">ml</td></tr>
+<tr><td class="p_tdA"><input onkeyup="flavor_b(fl_b,fl_bz,table_b)" id="fl_b" class="sl" value="Concentrated Flavor 1" maxlength="25" size="20" name="li">
+</td><td class="pcal_tdA"><input class="ass" onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" id="b" value="11" maxlength="5" size="3" name="mi">%
+</td><td class="pcal_tdA">
+</td><td class="pcal_tdA"><span class="div">|</span><span id="fl_bz">Concentrated Flavor 1</span>
+</td><td class="pcal_tdA">$<input onkeyup="money_e(e_mon,table_b)" id="e_mon" class="ass" value="1.96" maxlength="6" size="3" name="ni"> for <input onkeyup="mil_e(e_ml,table_b)" id="e_ml" class="ass" value="5" maxlength="5" size="2" name="oi">ml</td></tr>
+<tr><td class="l_tdA"><input onkeyup="flavor_c(fl_c,fl_cz,table_b)" id="fl_c" class="sl" value="Concentrated Flavor 2" maxlength="25" size="20" name="pi">
+</td><td class="tbcal_tdA"><input class="ass" onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" id="c" value="3" maxlength="5" size="3" name="qi">%
+</td><td class="tbcal_tdA">
+</td><td class="tbcal_tdA"><span class="div">|</span><span id="fl_cz">Concentrated Flavor 2</span>
+</td><td class="tbcal_tdA">$<input onkeyup="money_f(f_mon,table_b)" id="f_mon" class="ass" value="1.00" maxlength="6" size="3" name="ri"> for <input onkeyup="mil_f(f_ml,table_b)" id="f_ml" class="ass" value="5" maxlength="5" size="2" name="si">ml</td></tr>
+<tr><td class="p_tdA"><input onkeyup="flavor_d(fl_d,fl_dz,table_b)" id="fl_d" class="sl" value="Concentrated Flavor 3" maxlength="25" size="20" name="ti">
+</td><td class="pcal_tdA"><input class="ass" onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" id="d" value="4" maxlength="5" size="3" name="ui">%
+</td><td class="pcal_tdA">
+</td><td class="pcal_tdA"><span class="div">|</span><span id="fl_dz">Concentrated Flavor 3</span>
+</td><td class="pcal_tdA">$<input onkeyup="money_g(g_mon,table_b)" id="g_mon" class="ass" value="0.00" maxlength="6" size="3" name="vi"> for <input onkeyup="mil_g(g_ml,table_b)" id="g_ml" class="ass" value="0" maxlength="5" size="2" name="wi">ml</td></tr>
+<tr><td class="l_tdA"><input onkeyup="flavor_e(fl_e,fl_ez,table_b)" id="fl_e" class="sl" value="Concentrated Flavor 4" maxlength="25" size="20" name="xi">
+</td><td class="tbcal_tdA"><input class="ass" onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" id="e" value="5" maxlength="5" size="3" name="yi">%
+</td><td class="tbcal_tdA">
+</td><td class="tbcal_tdA"><span class="div">|</span><span id="fl_ez">Concentrated Flavor 4</span>
+</td><td class="tbcal_tdA">$<input onkeyup="money_h(h_mon,table_b)" id="h_mon" class="ass" value="0.00" maxlength="6" size="3" name="zi"> for <input onkeyup="mil_h(h_ml,table_b)" id="h_ml" class="ass" value="0" maxlength="5" size="2" name="al">ml</td></tr>
+<tr><td class="p_tdA"><input onkeyup="flavor_f(fl_f,fl_fz,table_b)" id="fl_f" class="sl" value="Concentrated Flavor 5" maxlength="25" size="20" name="bl">
+</td><td class="pcal_tdA"><input class="ass" onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" id="f" value="1" maxlength="5" size="3" name="cl">%
+</td><td class="pcal_tdA">
+</td><td class="pcal_tdA"><span class="div">|</span><span id="fl_fz">Concentrated Flavor 5</span>
+</td><td class="pcal_tdA">$<input onkeyup="money_i(i_mon,table_b)" id="i_mon" class="ass" value="0.00" maxlength="6" size="3" name="dl"> for <input onkeyup="mil_i(i_ml,table_b)" id="i_ml" class="ass" value="0" maxlength="5" size="2" name="el">ml</td></tr>
+<tr><td class="l_tdA"><input onkeyup="flavor_g(fl_g,fl_gz,table_b)" id="fl_g" class="sl" value="Concentrated Flavor 6" maxlength="25" size="20" name="fl">
+</td><td class="tbcal_tdA"><input class="ass" onkeyup="add(a,b,c,d,e,f,g,tota,totb,toar,toal,table_b,fl_a)" id="g" value="0" maxlength="5" size="3" name="gl">%
+</td><td class="tbcal_tdA">
+</td><td class="tbcal_tdA"><span class="div">|</span><span id="fl_gz">Concentrated Flavor 6</span>
+</td><td class="tbcal_tdA">$<input onkeyup="money_j(j_mon,table_b)" id="j_mon" class="ass" value="0.00" maxlength="6" size="3" name="hl"> for <input onkeyup="mil_j(j_ml,table_b)" id="j_ml" class="ass" value="0" maxlength="5" size="2" name="il">ml</td></tr>
+<tr><td class="fade_m">Aprox. <input onkeyup="drops(drp,table_b)" id="drp" class="ass" value="20" maxlength="3" size="1" name="jl"> Drops ml
+</td><td colspan="4" class="fade_m"><input onkeyup="notes(note,table_b)" id="note" class="sl" value="Note:" maxlength="100" size="80" name="kl"></td></tr>
+<tr><td colspan="2" class="ead">Resulting Recipe:
+</td><td class="ead"><input type="submit" class="enter" value="* Calculate *" name="submit">
+</td><td colspan="2" class="ead">Resulting Cost:</td></tr>
+</tbody></table>
+<table cellspacing="0" class="intable" summary="E-Liquid Calculator Error&#39;s">
+<tbody><tr><td class="lr_blink"><span id="inoneal"></span>
+</td><td class="amounta"><span id="inonea"></span></td>
+<td class="lr_blink"><span id="inonear"></span></td></tr>
+<tr><td colspan="3" class="amountb"><span id="intwoa"></span></td></tr>
+<tr><td class="lr_blink"><span id="toal"></span>
+</td><td class="inone"><span id="tota"></span>
+</td><td class="lr_blink"><span id="toar"></span></td></tr>
+<tr><td colspan="3" class="intwo"><span id="totb"></span></td></tr>
+<tr><td class="lr_blink"><span id="nic_ha_l"></span>
+</td><td class="inone"><span id="nic_ha"></span>
+</td><td class="lr_blink"><span id="nic_ha_r"></span></td></tr>
+<tr><td colspan="3" class="intwo"><span id="nic_hb"></span></td></tr>
+</tbody></table><table cellspacing="0" class="tblA" summary="DIY E-Liquid Recipe Mixing Calculator"><tbody><tr><td class="p_iner">
+<div id="table_b">
+<table cellspacing="0" class="intable" summary="E-Liquid Calculator Error's">
+<tbody><tr><td class="lr_blink"><span></span>
+</td><td class="inone"><span></span>
+</td><td class="lr_blink"><span></span></td></tr>
+<tr><td colspan="3" class="intwo"><span></span></td></tr>
+</tbody></table>
+<table cellspacing="0" class="tbcal" summary="DIY E-Liquid Recipe Mixing Calculator">
+<tbody><tr><td class="fade_e">Ingredient:
+</td><td class="fade_e">ml:
+</td><td class="fade_e">Drops:
+</td><td class="fade_e">Percent:
+</td><td class="fade_e">Ingredient:
+</td><td class="fade_e">Cost:</td></tr>
+<tr><td class="sAb">Nicotine E-Liquid
+</td><td class="sAAbr"><span id="r_1_1">5</span><span class="sml"> ml</span>
+</td><td class="sAAbr"><span id="r_1_2">100</span><span class="sdrp"> drp</span>
+</td><td class="sAAbr"><span id="r_1_3">50</span> % <span class="div">|</span>
+</td><td class="sAb">Nicotine E-Liquid
+</td><td class="sAb">$ <span id="r_1_4">0.83</span></td></tr>
+<tr><td class="fAb">PG/VG
+</td><td class="fAAbr"><span id="r_2_1">2.5</span><span class="fml"> ml</span>
+</td><td class="fAAbr"><span id="r_2_2">50</span><span class="fdrp"> drp</span>
+</td><td class="fAAbr"><span id="r_2_3">25</span> % <span class="div">|</span>
+</td><td class="fAb">PG/VG
+</td><td class="fAb">$ <span id="r_2_4">0.05</span></td></tr>
+<tr><td class="sAb"><span id="r_3_0">Water/Alcohol/PGA</span></td><td class="sAAbr"><span id="r_3_1">0.1</span><span class="sml"> ml</span>
+</td><td class="sAAbr"><span id="r_3_2">2</span><span class="sdrp"> drp</span>
+</td><td class="sAAbr"><span id="r_3_3">1</span> % <span class="div">|</span>
+</td>
+<td class="sAb"><span id="r_3_00">Water/Alcohol/PGA</span></td>
+<td class="sAb">$ <span id="r_3_4">0.01</span></td></tr>
+<tr>
+  <td class="fAb"><span id="r_4_0">Concentrated Concentrated Flavor 1</span></td><td class="fAAbr"><span id="r_4_1">1.1</span><span class="fml"> ml</span>
+</td><td class="fAAbr"><span id="r_4_2">22</span><span class="fdrp"> drp</span>
+</td><td class="fAAbr"><span id="r_4_3">11</span> % <span class="div">|</span>
+</td>
+<td class="fAb"><span id="r_4_00">Concentrated Concentrated Flavor 1</span></td>
+<td class="fAb">$ <span id="r_4_4">0.43</span></td></tr>
+<tr><td class="sAb"><span id="r_5_0">Concentrated Concentrated Flavor 2</span></td><td class="sAAbr"><span id="r_5_1">0.3</span><span class="sml"> ml</span>
+</td><td class="sAAbr"><span id="r_5_2">6</span><span class="sdrp"> drp</span>
+</td><td class="sAAbr"><span id="r_5_3">3</span> % <span class="div">|</span>
+</td>
+<td class="sAb"><span id="r_5_00">Concentrated Concentrated Flavor 2</span></td>
+<td class="sAb">$ <span id="r_5_4">0.06</span></td></tr>
+<tr><td class="fAb"><span id="r_6_0">Concentrated Concentrated Flavor 3</span></td><td class="fAAbr"><span id="r_6_1">0.4</span><span class="fml"> ml</span>
+</td><td class="fAAbr"><span id="r_6_2">8</span><span class="fdrp"> drp</span>
+</td><td class="fAAbr"><span id="r_6_3">4</span> % <span class="div">|</span>
+</td>
+<td class="fAb"><span id="r_6_00">Concentrated Concentrated Flavor 3</span></td>
+<td class="fAb">$ <span id="r_6_4">0</span></td></tr>
+<tr><td class="sAb"><span id="r_7_0">Concentrated Concentrated Flavor 4</span></td><td class="sAAbr"><span id="r_7_1">0.5</span><span class="sml"> ml</span>
+</td><td class="sAAbr"><span id="r_7_2">10</span><span class="sdrp"> drp</span>
+</td><td class="sAAbr"><span id="r_7_3">5</span> % <span class="div">|</span>
+</td>
+<td class="sAb"><span id="r_7_00">Concentrated Concentrated Flavor 4</span></td>
+<td class="sAb">$ <span id="r_7_4">0</span></td></tr>
+<tr><td class="fAb"><span id="r_8_0">Concentrated Concentrated Flavor 5</span></td><td class="fAAbr"><span id="r_8_1">0.1</span><span class="fml"> ml</span>
+</td><td class="fAAbr"><span id="r_8_2">2</span><span class="fdrp"> drp</span>
+</td><td class="fAAbr"><span id="r_8_3">1</span> % <span class="div">|</span>
+</td>
+<td class="fAb"><span id="r_8_00">Concentrated Concentrated Flavor 5</span></td>
+<td class="fAb">$ <span id="r_8_4">0</span></td></tr>
+<tr><td class="sAb"><span id="r_9_0">Concentrated Concentrated Flavor 6</span></td><td class="sAAbr"><span id="r_9_1">0</span><span class="sml"> ml</span>
+</td><td class="sAAbr"><span id="r_9_2">0</span><span class="sdrp"> drp</span>
+</td><td class="sAAbr"><span id="r_9_3">0</span> % <span class="div">|</span>
+</td>
+<td class="sAb"><span id="r_9_00">Concentrated Concentrated Flavor 6</span></td>
+<td class="sAb">$ <span id="r_9_4">0</span></td></tr>
+<tr><td class="fAbt">Total's
+</td><td class="fAAbt"><span id="r_0_1">10</span> ml
+</td><td class="fAAbt"><span id="r_0_2">200</span> drp
+</td><td class="fAAbt"><span id="r_0_3">100</span> % <span class="div">|</span>
+</td><td class="fAbt">Cost per ml (1ml) 
+</td><td class="fAbt">$ <span id="r_0_4">0.14</span></td></tr>
+<tr><td colspan="6" class="c_Abt" id="r_text">1 Name = 18mg - 10ml&nbsp;&nbsp;-&nbsp;Total Cost $ 1.38</td></tr>
+</tbody></table></div></td></tr>
+</tbody></table>
+
+<table cellspacing="0" class="tblA" summary="DIY E-Liquid Recipe Mixing Calculator">
+  <tbody><tr><td valign="top" class="in_b"></td><td valign="top" class="in_in"></td><td valign="top" class="in_b"></td></tr><tr><td class="in_iner"></td><td class="in_iner"></td><td valign="top" class="in_iner">
+</td></tr><tr><td valign="top" class="in_b"><img width="15" height="15" alt="rounded corner" src="/calculator/img/trans.gif" class="bot_l">
+</td><td valign="top" class="in_in"></td><td valign="top" class="in_b"><img width="15" height="15" alt="rounded corner" src="/calculator/img/trans.gif" class="bot_r"></td></tr>
+</tbody></table>
+</td><td></td></tr><tr><td></td><td></td><td></td></tr>
+</tbody></table><span style="margin-top:-30px;display:block;">HiLIQ &copy; 2014  All Rights Reserved.   </span>
+</form>
+
+
+</body></html>

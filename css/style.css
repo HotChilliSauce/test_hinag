@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+#container{
+    padding-top: 0;
+}
+.fadein{
+    height: 820px;
+    margin-top: 80px;
+    position: relative;
+}
+.fadein img{
+    width: 1920px;
+    height: 820px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 80px;
+    margin: 0 auto;
+}
+.mainSliderTxt{
+    width: 1200px;
+    height: 482px;
+    background: url(../images/mainSliderTxt03.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    margin-left: -600px;
+    margin-top: -214px;
+}
+
+/*mainRow01*/
+.mainRow01{
+    padding: 120px 0;
+}
+.row01Box{
+    width: 463px;
+    height: 235px;
+    background: url(../images/mainRow01Txt.png) no-repeat;
+    margin: 0 auto;
+}
+/*.row01Box{
+    width: 500px;
+    height: 250px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 100px;
+}*/
+.row01Box h3{
+    color: #282626;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.row01Box p{
+    text-align: center;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/*mainRow02*/
+.mainRow02{
+    background: #fcfcfc;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0 120px 0;
+}
+.mainRow02 h3{
+    color: #0e0e0e;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mainRow02 p{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color:#484848;
+    margin-bottom: 80px;
+}
+.leftBox{
+    float: left;
+    margin-left: 0;
+}
+.row02Box{
+    float: left;
+    position: relative;
+}
+.row02Box a{
+    display: block;
+}
+.row02Box.mBox{
+    width: 580px;
+    height: 330px;
+    background: #dfdfdf;
+    float: left;
+    margin-bottom: 40px;
+}
+.row02Box.mBox a{
+}
+.row02Box.mBox .menuInfo{
+}
+.row02Box.mBox ul{
+    margin: 80px 70px;
+}
+.row02Box.mBox ul li{
+    position: relative;
+    width: 440px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+.row02Box.mBox ul li a{
+    width: 300px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-right: 86px;
+}
+.row02Box.mBox ul li span{
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.row02Box.lBox{
+    width: 580px;
+    height: 700px;
+    margin-left: 40px;
+}
+.row02Box.sBox{
+    width: 270px;
+    height: 330px;
+    float: left;
+}
+.row02Box.sBox02{
+    margin-left: 40px;
+}
+.row02Box .menuInfo{
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+.row02Box .menuInfo h4{
+    font-size: 25px;
+    color: #fff;
+}
+
+/*mainRow03*/
+.mainRow03{
+    height: 390px;
+    position:relative;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.mainRow03Txt{
+    width: 1200px;
+    height: 261px;
+    background: url(../images/mainRow03Txt.png) no-repeat center center;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -600px;
+    z-index: 90;
+}
+.slider img{
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/*mainRow04*/
+.mainRow04{
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px 0 188px 0;
+}
+.mainRow04 h3{
+    color: #0e0e0e;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.row04{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-left: 60px;
+    display: block;
+    font-size: 0;
+    position: relative;
+}
+.row04.row04Box01{
+    margin-left: 0;
+}
+
+
+.row04Info .row04Box01{
+    background: url(../images/row04Img01.jpg)no-repeat;
+}
+.row04Info .row04Box02{
+    background: url(../images/row04Img02.jpg)no-repeat;
+}
+.row04Info .row04Box03{
+    background: url(../images/row04Img03.jpg)no-repeat;   
+}
+.row04{
+    background: rgba(45,90,121,0);
+    transition: all 1s;
+}
+.row04Info a{
+    height: 100%;
+    display: block;
+    background: rgba(45,90,121,0);
+    transition: background 0.5s;
+}
+.row04Info .row04 a:hover{
+    background: rgba(45,91,121,0.7);
+}
+.row04Tit{
+    width: 360px;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 360px;
+    z-index: 10;
+}
