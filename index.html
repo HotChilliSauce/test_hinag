@@ -42,7 +42,18 @@
         arrows:false,
         });
     })
-    
+    $(document).ready(function(){
+        
+        $(".slider02").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed:2000,
+        arrows:false,
+        });
+    })
     
     $(function(){
     $('.fadein img:gt(0)').hide();
@@ -50,7 +61,7 @@
 });
 </script>
 <style>
-    .fadein { position:relative; height:820px; width:100%;}
+    .fadein { position:relative; height:600px; width:100%;}
     .fadein img { position:absolute;}
 </style>
 </head>
@@ -153,16 +164,13 @@
 <!--컨테이너시작-->
 <div id="container">
     <!--메인슬라이더TXT시작-->
-    <div class="mainSliderTxt">메인슬라이더텍스트</div>
+    <!--<div class="mainSliderTxt">메인슬라이더텍스트</div>-->
     <!--메인슬라이더TXT끝-->
     <!--메인슬라이더시작-->
     <div class="fadein">
-        <img src="images/mainSlider01.jpg" alt="메인슬라이더배경"/>
-        <img src="images/mainSlider02.jpg" alt="메인슬라이더배경"/>
-        <img src="images/mainSlider03.jpg" alt="메인슬라이더배경"/>       
-        <img src="images/mainSlider04_02.jpg" alt="메인슬라이더배경"/>    
-        <img src="images/mainSlider05.jpg" alt="메인슬라이더배경"/>
-        <img src="images/mainSlider07.jpg" alt="메인슬라이더배경"/>     
+        <img src="images/main01.jpg" alt="메인배너"/>
+        <img src="images/main02.jpg" alt="메인배너"/>
+        <img src="images/main03.jpg" alt="메인배너"/>           
     </div>
     <!--메인슬라이더끝-->
     <!--mainRow01시작-->
@@ -174,6 +182,15 @@
         </div>
     </div>
     <!--mainRow01끝-->
+    <!--네비게이션시작-->
+        <div class="navStatic">
+        <div>
+            <a href="#">
+                <img src="images/row02_contact10.jpg" alt="메뉴이미지"/>
+            </a>
+        </div>
+        </div>
+        <!--네비게이션끝-->
     <!--mainRow02시작-->
     <div class="mainRow02">
         <div class="inner">
@@ -196,52 +213,51 @@
                     <!--공지시작-->
                     <div class="notice">
                         <div class="row02Box mBox cf">
-                            <div class="menuInfo"><h4>NOTICE</h4></div>
+                            <div class="menuInfo"><h4 class="black">NOTICE</h4></div>
                             <ul>
                                 <li>
                                     <a href="#">하이낙에 오신것을 환영합니다.</a>
-                                    <span>05-08</span>
+                                    <span>06-01</span>
                                 </li>
                                 <li>
-                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
-                                    <span>05-08</span>
+                                    <a href="#">홈페이지 오픈을 축하합니다.</a>
+                                    <span>06-01</span>
                                 </li>
                                 <li>
-                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
-                                    <span>05-08</span>
-                                </li>
-                                <li>
-                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
-                                    <span>05-08</span>
-                                </li>
-                                <li>
-                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
-                                    <span>05-08</span>
-                                </li>
-                                <li>
-                                    <a href="#">홈페이지 리뉴얼 중입니다.</a>
-                                    <span>05-08</span>
+                                    <a href="sub/mag01.html">HiNAG,HiLIQ 중국 최대 규모의 전자담배 박람회다녀오다.</a>
+                                    <span>04-24</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!--공지끝-->
                     <div class="leftBottomBox cf">
-                    <div class="row02Box sBox">
+                    <div class="row02Box sBox sBox01">
                         <a href="#">
-                            <img src="http://placehold.it/270x330" alt="메뉴이미지"/>
+                            <img src="images/row02_contact13.jpg" alt="메뉴이미지"/>
                             <div class="menuInfo">
-                                <h4>CONTECT US</h4>
-                              
+                                <h4 class="black">CONTACT US</h4>
                             </div>
                         </a>
                     </div>
                     <div class="row02Box sBox sBox02">
-                        <a href="#">
-                            <img src="http://placehold.it/270x330" alt="메뉴이미지"/>
+                        <a href="sub/juice01.html">
                             <div class="menuInfo">
-                                <h4>Menu</h4>
-                              
+                                <div class="slider02">
+                                    <div>
+                                        <img src="images/sub/juice/ice_%20(1).png" alt="슬라이더이미지"/>
+                                    </div>
+                                    <div>
+                                        <img src="images/sub/juice/ice_%20(2).png" alt="슬라이더이미지"/>
+                                    </div>
+                                    <div>
+                                        <img src="images/sub/juice/f_%20(1).png" alt="슬라이더이미지"/>
+                                    </div>
+                                    <div>
+                                        <img src="images/sub/juice/f_%20(3).png" alt="슬라이더이미지"/>
+                                    </div>
+                                </div>
+                                <h4 class="black">Menu</h4>
                             </div>
                         </a>
                     </div>
@@ -262,24 +278,12 @@
             </div>
         </div>
     </div>
-    <!--mainRow02끝-->
-    <!--mainRow03시작-->
-    <div class="mainRow03">
-        <div class="mainRow03Txt">메인슬라이더텍스트</div>
-        <div class="slider">
-            <div>
-                <img src="images/mainRow03Bg02.jpg" alt="슬라이더이미지"/>
-            </div>
-            <div>
-                <img src="images/mainRow03Bg01.jpg" alt="슬라이더이미지"/>
-            </div>
-        </div>
-    </div>
-    <!--mainRow03끝-->
+    <!--mainRow02끝-->   
     <!--mainRow04시작-->
     <div class="mainRow04">
         <div class="inner">
             <h3>PRODUCT</h3>
+            <p>VAPE의 여행에 초대합니다.</p>
                 <div class="row04Info cf">
                     <div class="row04 row04Box01">
                         <a href="sub/juice01.html">
@@ -357,6 +361,19 @@
         </div>
     </div>
     <!--mainRow04끝-->
+    <!--mainRow03시작-->
+    <div class="mainRow03">
+        <div class="mainRow03Txt">메인슬라이더텍스트</div>
+        <div class="slider">
+            <div>
+                <img src="images/mainRow03Bg02.jpg" alt="슬라이더이미지"/>
+            </div>
+            <div>
+                <img src="images/mainRow03Bg01.jpg" alt="슬라이더이미지"/>
+            </div>
+        </div>
+    </div>
+    <!--mainRow03끝-->
     <!--footer시작-->
     <div id="footer">
         <!--footerTop시작-->

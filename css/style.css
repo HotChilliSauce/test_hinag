@@ -4,22 +4,20 @@
     padding-top: 0;
 }
 .fadein{
-    height: 820px;
+    height: 600px;
     margin-top: 80px;
     position: relative;
+    overflow: hidden;
 }
 .fadein img{
     width: 1920px;
-    height: 820px;
-    overflow: hidden;
+    height: 600px;
+    position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: 80px;
-    margin: 0 auto;
+    left: 50%;
+    margin-left: -960px;
 }
-.mainSliderTxt{
+/*.mainSliderTxt{
     width: 1200px;
     height: 482px;
     background: url(../images/mainSliderTxt03.png) no-repeat;
@@ -31,7 +29,7 @@
     top: 50%;
     margin-left: -600px;
     margin-top: -214px;
-}
+}*/
 
 /*mainRow01*/
 .mainRow01{
@@ -71,14 +69,15 @@
     margin: 0 auto;
     padding: 100px 0 120px 0;
 }
-.mainRow02 h3{
-    color: #0e0e0e;
+.mainRow02 h3,.mainRow04 h3{
+    /*color: #0e0e0e;*/
+    color: #1d3950;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
-.mainRow02 p{
+.mainRow02 p,.mainRow04 p{
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
@@ -99,7 +98,7 @@
 .row02Box.mBox{
     width: 580px;
     height: 330px;
-    background: #dfdfdf;
+    background: #fff;
     float: left;
     margin-bottom: 40px;
 }
@@ -114,7 +113,7 @@
     position: relative;
     width: 440px;
     margin: 5px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #f2f2f2;
 }
 .row02Box.mBox ul li a{
     width: 300px;
@@ -131,18 +130,27 @@
     right: 0;
     top: 0;
 }
-.row02Box.lBox{
-    width: 580px;
-    height: 700px;
-    margin-left: 40px;
-}
 .row02Box.sBox{
     width: 270px;
     height: 330px;
     float: left;
 }
 .row02Box.sBox02{
+    background: #fff;
     margin-left: 40px;
+    position: relative;
+}
+.row02Box.sBox02 .slider02{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 60px;
+    margin-left: -110px;
+}
+.row02Box.sBox02 .slider02 img{
+    width: 80%;
+    margin: 0 auto;
 }
 .row02Box .menuInfo{
     width: 100%;
@@ -153,9 +161,19 @@
 }
 .row02Box .menuInfo h4{
     font-size: 25px;
+    font-weight: 600;
     color: #fff;
 }
-
+.row02Box .menuInfo .black{
+    color: #1d3950;
+    position: absolute;
+    right: 0;
+}
+.row02Box.lBox{
+    width: 580px;
+    height: 700px;
+    margin-left: 40px;
+}
 /*mainRow03*/
 .mainRow03{
     height: 390px;
@@ -187,13 +205,6 @@
     margin: 0 auto;
     padding: 120px 0 188px 0;
 }
-.mainRow04 h3{
-    color: #0e0e0e;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
 .row04{
     width: 360px;
     height: 360px;
@@ -209,13 +220,13 @@
 
 
 .row04Info .row04Box01{
-    background: url(../images/row04Img01.jpg)no-repeat;
+    background: url(../images/row04Img01_02.jpg)no-repeat;
 }
 .row04Info .row04Box02{
-    background: url(../images/row04Img02.jpg)no-repeat;
+    background: url(../images/row04Img02_02.jpg)no-repeat;
 }
 .row04Info .row04Box03{
-    background: url(../images/row04Img03.jpg)no-repeat;   
+    background: url(../images/row04Img03_02.jpg)no-repeat;   
 }
 .row04{
     background: rgba(45,90,121,0);

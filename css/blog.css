@@ -138,22 +138,19 @@
 /**/
 .infoIn01 .link{
     width: 200px;
+    padding: 10px 0;
     margin-top: 30px;
     text-align: center;
-    padding: 1px 20px 13px 10px;
-    background: #fff;
-    box-shadow: -2px -4px 5px 1px #e2e2e2 inset;
+    border: 2px solid #000;
 }
 .infoIn01 .link a{
-    color: #313131;
+    color: #000;
 }
 .infoIn01 .link:hover{
-    padding: 10px 15px 4px 15px;
-    background: #fff;
-    box-shadow: 2px 4px 5px 1px #e2e2e2 inset;
+    background: #000;
 }
 .infoIn01 .link:hover a{
-    color: #000;
+    color: #fff;
 }
 .info02, .info03{
     margin-top: 120px;
