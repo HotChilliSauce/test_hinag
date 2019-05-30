@@ -64,15 +64,18 @@
     display: none;
 }
 /*navStatic*/
+.navWrap{
+    width: 100%;
+}
 .navStatic{
     position: fixed;
     top: 85px;
-    right: -173px;
+    right: 5px;
     z-index: 10;
 }
 .navStatic img{
-    width: 32%;
-    border: 7px solid #dad9d4;
+    width: 80px;
+    /*border: 7px solid #dad9d4;*/
 }
 /*2차메뉴*/
 .lnb{
