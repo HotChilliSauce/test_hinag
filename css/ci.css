@@ -4,6 +4,19 @@
 .gnb .gnbAct .on1{
     color: #008cff;
 }
+/*navStatic*/
+.navWrap{
+    width: 100%;
+}
+.navStatic{
+    position: fixed;
+    top: 335px;
+    right: 5px;
+    z-index: 10;
+}
+.navStatic img{
+    width: 80px;
+}
 
 /*company*/
 

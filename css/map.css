@@ -4,9 +4,21 @@
 .gnb .gnbAct .on5{
     color: #008cff;
 }
+/*navStatic*/
+.navWrap{
+    width: 100%;
+}
+.navStatic{
+    position: fixed;
+    top: 335px;
+    right: 5px;
+    z-index: 10;
+}
+.navStatic img{
+    width: 80px;
+}
 
 /*map*/
-
 .sub01Slider{
     height: 250px;
     overflow: hidden;
