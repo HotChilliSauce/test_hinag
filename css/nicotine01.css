@@ -113,22 +113,12 @@
 /*액상공통*/
 .subInfo{
     padding-top: 148px;
+    margin-bottom: 120px;
 }
 .subInfo h2{
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 30px;
-}
-.subInfo ul{
-    float: left;
-    margin-bottom: 80px;
-}
-.subInfo ul li{
-    margin-right: 66px;
-    float: left;
-}
-.subInfo .last{
-    margin-right: 0;
 }
 .subInfo h4{
     font-size: 18px;
@@ -142,19 +132,12 @@
 }
 .subInfo img{
     display: block;
+    margin: 0 auto;
 }
 .infoTit{
     width: 100%;
     border-bottom: 2px solid #ababab;
     margin-bottom: 85px;
 }
-/**/
-.info02, .info03{
-    margin-top: 120px;
-}
-
-
-
-
 
 

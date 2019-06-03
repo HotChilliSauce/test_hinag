@@ -7,7 +7,6 @@
 #popup01{
     position:fixed; z-index: 10000; background:rgba(0,0,0,0.8);width:540px;height:707px; top:0; left:0; bottom: 0; right: 0; margin: auto; display:none;
 }
-
 .fadein{
     height: 600px;
     margin-top: 80px;
@@ -22,20 +21,6 @@
     left: 50%;
     margin-left: -960px;
 }
-/*.mainSliderTxt{
-    width: 1200px;
-    height: 482px;
-    background: url(../images/mainSliderTxt03.png) no-repeat;
-    background-size: 100%;
-    text-indent: -9999px;
-    position: absolute;
-    z-index: 99;
-    left: 50%;
-    top: 50%;
-    margin-left: -600px;
-    margin-top: -214px;
-}*/
-
 /*mainRow01*/
 .mainRow01{
     padding: 120px 0;
@@ -46,13 +31,6 @@
     background: url(../images/mainRow01Txt.png) no-repeat;
     margin: 0 auto;
 }
-/*.row01Box{
-    width: 500px;
-    height: 250px;
-    line-height: 30px;
-    margin: 0 auto;
-    margin-top: 100px;
-}*/
 .row01Box h3{
     color: #282626;
     text-align: center;
@@ -222,8 +200,6 @@
 .row04.row04Box01{
     margin-left: 0;
 }
-
-
 .row04Info .row04Box01{
     background: url(../images/row04Img01_02.jpg)no-repeat;
 }

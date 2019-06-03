@@ -116,19 +116,8 @@
 }
 .subInfo h2{
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 30px;
-}
-.subInfo ul{
-    float: left;
-    margin-bottom: 80px;
-}
-.subInfo ul li{
-    margin-right: 66px;
-    float: left;
-}
-.subInfo .last{
-    margin-right: 0;
 }
 .subInfo h4{
     font-size: 18px;

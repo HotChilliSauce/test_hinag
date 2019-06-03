@@ -123,7 +123,9 @@
 }
 
 /*footer*/
-#footer{}
+#footer{
+    margin-top: 120px;
+}
 #footer ul li{
     float: left;
 }
@@ -131,7 +133,8 @@
 .footerTop{
     padding: 120px 0;
 }
-.footerBnr{}
+.footerBnr{
+}
 .footerBnr li{
     margin-right: 60px;
 }

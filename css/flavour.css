@@ -116,7 +116,7 @@
 }
 .subInfo h2{
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 .subInfo ul{
@@ -132,8 +132,12 @@
 }
 .subInfo h4{
     font-size: 18px;
+    line-height: 30px;
     font-weight: bold;
     margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ababab;
 }
 .subInfo p{
     font-size: 15px;
