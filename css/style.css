@@ -207,11 +207,7 @@
     background: url(../images/row04Img02_02.jpg)no-repeat;
 }
 .row04Info .row04Box03{
-    background: url(../images/row04Img03_02.jpg)no-repeat;   
-}
-.row04{
-    background: rgba(45,90,121,0);
-    transition: all 1s;
+    background: url(../images/row04Img04.jpg)no-repeat;   
 }
 .row04Info a{
     height: 100%;
@@ -221,6 +217,9 @@
 }
 .row04Info .row04 a:hover{
     background: rgba(45,91,121,0.7);
+}
+.row04Info .row04.row04Box02 a:hover .row04Info .row04.row04Box02{
+    background: url(../images/row04Img03_02.jpg)no-repeat;
 }
 .row04Tit{
     width: 360px;
