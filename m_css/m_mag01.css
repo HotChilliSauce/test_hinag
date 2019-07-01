@@ -1,0 +1,54 @@
+@charset "utf-8";
+@media screen and (max-width:768px){
+    
+    #wrap{
+        display: block;
+    }
+    #header{
+        display: none;
+    }
+    #mobi{
+        display: block;
+    }
+    #mHeader{
+        display: block;
+    }
+    .sub01Slider{
+        display: none;
+    }
+    .subNav{
+        display: none;
+    }
+    /**/
+    .subWrap{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .subInfo{
+        padding-top: 0;
+    }
+    .subInfo h2{
+        font-size: 23px;
+        font-family: "TmonMonsori";
+        color: #103e56;
+        line-height: 80px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .infoTit{
+        width: 100%;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+    .infoIn01{
+        padding-top: 30px;
+    }
+    .infoIn01 ul{}
+    .infoIn01 ul li{
+        margin: 20px 0;
+    }
+    .infoIn01 img{
+        width: 100%;
+    }
+    
+}

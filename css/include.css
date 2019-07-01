@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@media screen and (min-width:768px){
 /*header*/
 #header{
     height: 80px;
@@ -123,8 +123,11 @@
 }
 
 /*footer*/
+#mFooter{
+    display: none;
+}
 #footer{
-    margin-top: 120px;
+    margin-top: 150px;
 }
 #footer ul li{
     float: left;
@@ -216,4 +219,5 @@
 }
 .footerInfo .footerSns li:after{
     display: none;
+}
 }

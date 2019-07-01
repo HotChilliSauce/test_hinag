@@ -1,0 +1,68 @@
+@charset "utf-8";
+@media screen and (max-width:768px){
+    #wrap{
+        display: block;
+    }
+    #header{
+        display: none;
+    }
+    #mobi{
+        display: block;
+    }
+    #mHeader{
+        display: block;
+    }
+    .sub01Slider{
+        display: none;
+    }
+    .subNav{
+        display: none;
+    }
+    /*컨테이너*/
+    #container{
+        font-family: "GoyangIlsan";
+    }
+    .subWrap{
+        width: calc(100% - 40px);
+        margin: 0 auto
+    }
+    .subTit{
+        width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+    .subTit h3{
+        font-size: 23px;
+        font-family: "TmonMonsori";
+        color: #103e56;
+        line-height: 80px;
+        text-align: center;
+    }
+    .subInfo{
+        padding-top: 0;
+    }
+    .subInfo h2{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .infoTit{
+        margin-bottom: 20px;
+    }
+    .subInfo img{
+        width: 100%;
+    }
+    .info01{
+        padding-top: 30px;
+    }
+    .infoIn01 p{
+        font-family: "GoyangIlsan";
+        font-size: 14px;
+        line-height: 25px;
+        margin: 20px 0;
+        padding-bottom: 30px;
+    }
+    .infoIn01 .base01 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    
+}

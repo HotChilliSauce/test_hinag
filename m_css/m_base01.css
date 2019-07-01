@@ -1,0 +1,49 @@
+@charset "utf-8";
+@media screen and (max-width:768px){
+    /*컨테이너*/
+    #container{
+        margin-bottom: 0;
+    }
+    .subWrap{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    .subRow h3{
+        font-size: 23px;
+        font-family: "TmonMonsori";
+        color: #103e56;
+        line-height: 80px;
+        text-align: center;
+    }
+    .subRow img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .subRow01{
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .row01Img{
+        margin-bottom: 13px;
+    }
+    .subRow02{
+        border-top: 1px solid #d5d5d5;
+        padding-top: 80px;
+    }
+    
+    /**/
+    .infoTit {
+        display: none;
+    }
+    .infoIn01 .base01 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .infoIn01 p {
+        font-family: "GoyangIlsan";
+        font-size: 14px;
+        line-height: 25px;
+        margin: 20px 0;
+        padding-bottom: 30px;
+}
+}

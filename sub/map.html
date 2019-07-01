@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="../css/default.css" type="text/css"/>
 <link rel="stylesheet" href="../css/slick.css" type="text/css"/>
 <link rel="stylesheet" href="../css/map.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_map.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_include.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_default.css" type="text/css"/>
 <link rel="stylesheet" href="../css/loading.css" type="text/css"/>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="../images/common/hinag_favicon32_R7b_icon.ico" type="image/x-icon"/>
@@ -25,8 +28,9 @@ $(document).ready( function() {
 
 $("#header").load("../common/header.html");
 $("#footer").load("../common/footer.html");
+$("#mFooter").load("../common/m_footer.html");
 
-}); 
+});
 </script>
 </head>
 <body>
@@ -70,7 +74,7 @@ $("#footer").load("../common/footer.html");
                 </div>
                 <!--지도끝-->
                 <h4>주소</h4>
-                <p>부산광역시 금정구 공단로 70번길 1층 하이낙 
+                <p>부산광역시 금정구 공단로 70번길 1층 하이낙
                     &#40;부산광역시 금정구 금사동 75-11 1층 하이낙&#41;</p>
                 <h4>전화번호</h4>
                 <p>070-7006-4042</p>
@@ -87,7 +91,8 @@ $("#footer").load("../common/footer.html");
                 </div>
                 <!--지도끝-->
                 <h4>주소</h4>
-                <p>서울특별시 금천구 서부샛길 606 디폴리스지식산업센터 403호</p>
+                <p>서울특별시 금천구 서부샛길 606 디폴리스지식산업센터 403호
+                &#40;서울특별시 금천구 가산동 543-1&#41;</p>
                 <h4>전화번호</h4>
                 <p>070-4249-6380</p>
             </div>
@@ -100,13 +105,185 @@ $("#footer").load("../common/footer.html");
     </div>
     <!--subWrap끝-->
     
-<!--footer시작-->
-<div id="footer">
-</div>
-<!--footer끝-->
 </div>
 <!--컨테이너끝-->
+<!--footer시작-->
+<footer id="footer">
+</footer>
+<!--footer끝-->
 </div>
 <!--전체끝-->
+
+<!-------------------------모바일 전체시작------------------------->
+<div id="mWrap">
+    
+<!--헤더시작-->
+<header id="header">
+    <div class="headerTop">
+        <!--로고시작-->
+        <h1><a href="../index.html">로고영역</a></h1>
+        <!--로고끝-->
+        <!--패널시작-->
+        <div class="pannel">
+            <a href="#" onclick="openNav()">패널영역</a>
+        </div>
+        <!--패널끝-->
+    </div>
+</header>
+<!--헤더끝-->
+<!--메뉴바-->
+<ul class="mapBar">
+    <li class="mapBarHome">
+        <a href="../index.html">home영역</a>
+    </li>
+    <li>
+        <p><a href="#">회사소개</a></p>
+    </li>
+    <li>
+        <p class="mapBarPage">오시는길</p>
+    </li>
+</ul>
+<!--메뉴바끝-->
+<!--컨테이너시작-->
+    <div id="container">
+        <!--부산-->
+        <div class="mapWrap">
+        <!--메뉴탑바-->
+        <div class="menuTopBar">
+            <ul class="">
+                <li class="on"><a href="#">부산(본사)</a></li>
+                <!--<li><a href="#">서울지점</a></li>-->
+            </ul>
+        </div>
+        <!--메뉴탑바끝-->
+        <!--지도이미지-->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.4721628590846!2d129.11238911524612!3d35.219614580304416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356893c29cbc2427%3A0xfa5160ed54fcb7ac!2zKOycoCntlZjsnbTrgpkoSGlOQUcp!5e0!3m2!1sko!2skr!4v1559286193877!5m2!1sko!2skr" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!--지도이미지-->
+        
+        <!--오시는길-->
+        <div class="mapInfo">
+            <!--주소-->
+            <dl class="info01">
+                <dt>
+                    <img src="../images/m/sub/map/icon_adress.png" alt="주소아이콘"/>
+                </dt>
+                <dd>
+                    <h4>도로명주소</h4>
+                    부산광역시 금정구 공단로 70번길 1층 하이낙 
+                    <h4>지번주소</h4>
+                    &#40;46332&#41;부산광역시 금정구 금사동 75-11 1층 하이낙
+                </dd>
+            </dl>
+            <!--주소끝-->
+            <!--문의전화-->
+            <dl class="info02 last">
+                <dt>
+                    <img src="../images/m/sub/map/icon_phone.png" alt="전화아이콘"/>
+                </dt>
+                <dd>
+                    <h4>문의전화</h4>
+                    070-7006-4042
+                    <a href="tel:07070064042">
+                        <img src="../images/m/sub/map/icon_speech_phone.png" class="callBtn" alt="바로전화아이콘">
+                    </a>
+                </dd>
+            </dl>
+            <!--문의전화끝-->
+        </div>
+        <!--오시는길끝-->
+        </div>
+        <!--부산끝-->
+        <!--서울-->
+        <div class="mapWrap">
+        <!--메뉴탑바-->
+        <div class="menuTopBar">
+            <ul class="">
+                <li class="on"><a href="#">서울(지점)</li>
+                <!--<li><a href="#">서울지점</a></li>-->
+            </ul>
+        </div>
+        <!--메뉴탑바끝-->
+        <!--지도이미지-->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6332.418628762842!2d126.87308033112299!3d37.479386669396256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61e39895c18f%3A0x213e48bb12785aa!2z64yA7ISx65SU7Y-066as7Iqk7IKw7JeF64uo7KeAQeuPmQ!5e0!3m2!1sko!2skr!4v1557215675247!5m2!1sko!2skr" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!--지도이미지-->
+        
+        <!--오시는길-->
+        <div class="mapInfo">
+            <!--주소-->
+            <dl class="info01">
+                <dt>
+                    <img src="../images/m/sub/map/icon_adress.png" alt="주소아이콘"/>
+                </dt>
+                <dd>
+                    <h4>도로명주소</h4>
+                    서울특별시 금천구 서부샛길 606 디폴리스지식산업센터 403호 
+                    <h4>지번주소</h4>
+                    &#40;08504&#41;서울특별시 금천구 가산동 543-1 403호
+                </dd>
+            </dl>
+            <!--주소끝-->
+            <!--문의전화-->
+            <dl class="info02 last">
+                <dt>
+                    <img src="../images/m/sub/map/icon_phone.png" alt="전화아이콘"/>
+                </dt>
+                <dd>
+                    <h4>문의전화</h4>
+                    070-4249-6380
+                    <a href="tel:07042496380">
+                        <img src="../images/m/sub/map/icon_speech_phone.png" class="callBtn" alt="바로전화아이콘">
+                    </a>
+                </dd>
+            </dl>
+            <!--문의전화끝-->
+        </div>
+        <!--오시는길끝-->
+        </div>
+        <!--서울끝-->
+        
+    </div>
+<!--컨테이너끝-->
+<!--푸터시작-->
+<footer id="mFooter">
+</footer>
+<!--푸터끝-->
+    <!--pannel-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <img src="../images/common/logo02.png"/>
+            <h3>회사소개/고객지원</h3>
+            <li><a href="../sub/company.html">HiNAG WAY</a></li>
+            <li><a href="../sub/map.html">찾아오시는 길</a></li>
+            <h3>제품</h3>
+            <li><a href="../sub/nicotine01.html">니코틴</a></li>
+            <li><a href="../sub/oem01.html">OEM</a></li>
+            <li><a href="../sub/juice01.html">단일액상</a></li>
+            <li><a href="../sub/juice02.html">조합액상</a></li>
+            <li><a href="../sub/juice03.html">아이스액상</a></li>
+            <li><a href="../sub/flavour.html">향료</a></li>
+            <li><a href="../sub/base01.html">베이스</a></li>
+            <h3>홍보</h3>
+            <li><a href="../sub/mag.html">매거진</a></li>
+        </ul>
+    </div>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "80%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    <!--pannel끝-->
+    
+    </div>
+<!--모바일전체끝-->
 </body>
 </html>

@@ -1,4 +1,7 @@
 @charset "utf-8";
+#container{
+    padding-top: 0;
+ }
 
 /*hover*/
 .gnb .gnbAct .on3{

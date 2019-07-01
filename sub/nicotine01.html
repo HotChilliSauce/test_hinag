@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="../css/default.css" type="text/css"/>
 <link rel="stylesheet" href="../css/slick.css" type="text/css"/>
 <link rel="stylesheet" href="../css/nicotine01.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_nicotine.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_include.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_default.css" type="text/css"/>
 <link rel="stylesheet" href="../css/loading.css" type="text/css"/>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="../images/common/hinag_favicon32_R7b_icon.ico" type="image/x-icon"/>
@@ -25,6 +28,8 @@ $(document).ready( function() {
 
 $("#header").load("../common/header.html");
 $("#footer").load("../common/footer.html");
+$("#mFooter").load("../common/footer.html");
+$("#mobi").load("../common/m_mobi.html");
 
 }); 
 </script>
@@ -86,13 +91,84 @@ $("#footer").load("../common/footer.html");
     </div>
     <!--subWrap끝-->
     
+</div>
+<!--컨테이너끝-->
 <!--footer시작-->
 <div id="footer">
 </div>
 <!--footer끝-->
 </div>
-<!--컨테이너끝-->
-</div>
 <!--전체끝-->
+    
+<!-------------------------모바일 전체시작------------------------->
+<div id="mWrap">
+    
+<!---------------------모바일-------------------------->
+<div id="mobi">
+</div>
+<!---------------------모바일-------------------------->
+<!------------------모바일메뉴바------------------------>
+<ul class="mapBar">
+    <li class="mapBarHome">
+        <a href="../index.html">home영역</a>
+    </li>
+    <li>
+        <p><a href="#">제품</a></p>
+    </li>
+    <li>
+        <p class="mapBarPage">니코틴</p>
+    </li>
+</ul>
+<!------------------모바일메뉴바끝------------------------>
+<!--컨테이너시작-->
+<div id="container">
+    <div class="subRow">
+        <h3>HiNAG's Nicotine</h3>
+        <div class="subRow01">
+            <div class="row01Img">
+                <img src="../images/m/sub/m_nico01.jpg" alt="줄기니코틴"/>
+            </div>
+            <p>
+                하이낙의 니코틴은 불순물 0%에 가까운<br/>
+                순도 99.9%의 천연 줄기 니코틴만 사용합니다.<br/>
+            </p>
+            <p>
+                순도 99.9%의 천연 줄기 니코틴만을 사용하여<br/>
+                240mg 희석니코틴을 제조합니다.<br/>
+            </p>
+            <p>
+                퓨어 니코틴을 사용하여 만드는 니코틴 베이스는<br/>
+                보다 뛰어난 품질을 보장합니다.<br/>
+                (업체 맞춤형 농도 3mg~9.9mg 사이로 제작가능)
+            </p>
+        </div>
+        <div class="subRow02">
+            <div class="row02Img">
+                <img src="../images/m/sub/m_nico02.jpg" alt="줄기니코틴"/>
+            </div>
+            <p>
+                새롭게 떠오르는 니코틴, 솔트 니코틴 입니다<br/>
+                하이리큐에서 개발에 성공하여<br/>
+                성분검사까지 전부 완료했습니다.<br/>
+            </p>
+            <p>
+                기존의 전자담배에서 느끼지 못했던 충족감을<br/>
+                솔트 니코틴에서는 느낄 수 있습니다.<br/>
+            </p>
+            <p>
+                - 솔트 니코틴 베이스 판매<br/>
+                - 솔트 니코틴 액상 OEM 추후 추가 예정
+            </p>
+        </div>
+    </div>
+</div>
+<!--컨테이너끝-->
+<!--푸터시작-->
+<footer id="mFooter">
+</footer>
+<!--푸터끝-->
+    
+</div>
+<!--모바일전체끝-->
 </body>
 </html>

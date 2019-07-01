@@ -1,0 +1,297 @@
+@charset "utf-8";
+@media screen and (max-width:768px){
+    #header{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    #header .headerTop{
+        height: 50px;
+        background: #fff;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+    }
+    #header .headerTop h1{
+        width: 89px;
+        height: 23px;
+        background: url(../images/common/logo.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -11px;
+        margin-left: -45px;
+        text-indent: -9999px;
+    }
+    #header h1 a{
+        height: 100%;
+        display: block;
+    }
+    .gnb{
+        display: none;
+    }
+    
+    /*실험*/
+    #mHeader{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    #mHeader .headerTop{
+        height: 50px;
+        background: #fff;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+    }
+    #mHeader .headerTop h1{
+        width: 89px;
+        height: 23px;
+        background: url(../images/common/logo.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -11px;
+        margin-left: -45px;
+        text-indent: -9999px;
+    }
+    #mHeader h1 a{
+        height: 100%;
+        display: block;
+    }
+    
+    /*pannel*/
+    .pannel{
+        display: block;
+        width: 30px;
+        height: 24px;
+        background: url(../images/common/pannel.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: -12px;
+        text-indent: -9999px;
+    }
+    .pannel a{
+        display: block;
+    }
+    
+    /*pannel*/
+    #mySidenav{
+        text-align: left;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #d3d3d3;
+        overflow-x: hidden;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .sidenav a {
+        /*padding: 0 5px 2px 5px;*/
+        text-decoration: none;
+        font-size: 13px;
+        color: #414141;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 34px;
+        margin-right: 0;
+        color: #efefef
+    }
+    .sidenav ul{
+        padding: 0 20px;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+    .sidenav ul li{
+        padding: 5px 12px;
+        background: #e3e3e3;
+        border-bottom: 2px solid #efefef;
+    }
+    .sidenav ul li a{
+        font-family: 'NanumSquare';
+        font-weight: 500;
+        padding: 3px 0;
+    }
+    .sidenav h3{
+        font-size: 17px;
+        font-weight: 900;
+        font-family: 'NanumSquare';
+        color: #414141;
+        background: #efefef;
+        /*border-top: 3px solid #efefef;*/
+        /*border-bottom: 2px solid #e3e3e3;*/
+        margin: 20px 0 1px 0;
+        padding: 6px 0 4px 11px;
+    }
+    .sidenav img{
+        width: 89px;
+        height: 23px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        margin-top: 14px;
+        margin-left: -45px;
+    }
+    
+    /*네비게이션 팝업*/
+    .navWrap{
+        display: none;
+    }
+
+    /*mapBar*/
+    .mapBar{
+        width: calc(100% - 40px);
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50px;
+    }
+    .mapBar li{
+        display: inline-block;
+        font-size: 0;
+        background: url(../images/m/common/arrow_right01.png) no-repeat;
+        background-position: left;
+        padding: 0 14px;
+    }
+    .mapBarHome{
+    }
+    .mapBar .mapBarHome a{
+        width: 14px;
+        height: 14px;
+        display: block;
+        font-size: 15px;
+        background: url(../images/m/common/home.png) no-repeat;
+        background-size: 100% 100%;
+        text-indent: -9999px;
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        left: 0;
+    }
+    .mapBar li p{
+        font-size: 15px;
+        font-family: "GoyangIlsan";
+        margin-left: 5px;
+    }
+    .mapBar li p a{
+        color: #000;
+    }
+    .mapBarPage{
+        font-weight: bold;
+    }
+    
+    /*footer*/
+    #footer{
+        display: none;
+    }
+    #mFooter{
+        display: block;
+        margin-top: 70px;
+        bottom: 0;
+    }
+    .footerTop{
+        padding: 10px 0;
+        background: #f6f6f6;
+    }
+    .footerBnr{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .footerBnr li{
+        float: left;
+        margin: 5px 5px;
+    }
+    .footerBnr li:last{
+        margin-right: 0;
+    }
+    .footerBnr li a{
+        display: block;
+    }
+    .footerBnr li a img{
+        width: 100%;
+    }
+    .footerBottom{
+        width: 100%;
+        background: #303030;
+        margin: 0 auto;
+        padding: 20px 0 30px 0;
+    }
+    .footerInfo{
+        position: relative;
+        padding-top: 45px;
+    }
+    .footerLogo{
+        width: 89px;
+        height: 23px;
+        margin: 0 auto;
+        position: absolute;
+        top: 5px;
+        left: 30px;
+    }
+    .footerLogo a{
+        display: block;
+    }
+    .footerLogo a img{
+        width: 100%;
+    }
+    .infoTxt{
+        text-align: center;
+    }
+    .infoTxt ul{}
+    .infoTxt ul li{
+        color: #e0e0e0;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 3px 0;
+        font-weight: 100;
+    }
+    .infoTxt p{
+        color: #e0e0e0;
+        font-size: 12px;
+        font-weight: 100;
+        padding-top: 9px;
+    }
+    .footerSns{
+        position: absolute;
+        right: 25px;
+        top: 0;
+    }
+    .footerSns li{
+        float: left;
+        padding: 5px 5px;
+        margin: -1px 5px;
+    }
+    .footerSns li a{
+        display: block;
+    }
+    .footerSns li a img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }

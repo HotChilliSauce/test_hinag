@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="../css/default.css" type="text/css"/>
 <link rel="stylesheet" href="../css/slick.css" type="text/css"/>
 <link rel="stylesheet" href="../css/mag01.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_include.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_default.css" type="text/css"/>
+<link rel="stylesheet" href="../m_css/m_mag01.css" type="text/css"/>
 <link rel="stylesheet" href="../css/loading.css" type="text/css"/>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="../images/common/hinag_favicon32_R7b_icon.ico" type="image/x-icon"/>
@@ -25,6 +28,8 @@ $(document).ready( function() {
 
 $("#header").load("../common/header.html");
 $("#footer").load("../common/footer.html");
+$("#mFooter").load("../common/m_footer.html");
+$("#mobi").load("../common/m_mobi.html");
 
 }); 
     
@@ -43,6 +48,23 @@ $("#footer").load("../common/footer.html");
 <header id="header">
 </header>
 <!--헤더끝-->
+<!---------------------모바일-------------------------->
+<div id="mobi">
+</div>
+<!---------------------모바일-------------------------->
+<!------------------모바일메뉴바------------------------>
+<ul class="mapBar">
+    <li class="mapBarHome">
+        <a href="../index.html">home영역</a>
+    </li>
+    <li>
+        <p><a href="#">홍보</a></p>
+    </li>
+    <li>
+        <p class="mapBarPage">매거진</p>
+    </li>
+</ul>
+<!------------------모바일메뉴바끝------------------------>
 <!--컨테이너시작-->
 <div id="container">
     <!--메인슬라이더시작-->
@@ -104,12 +126,16 @@ $("#footer").load("../common/footer.html");
     </div>
     <!--subWrap끝-->
     
-<!--footer시작-->
-<div id="footer">
-</div>
-<!--footer끝-->
 </div>
 <!--컨테이너끝-->
+<!--footer시작-->
+<footer id="footer">
+</footer>
+<!--footer끝-->
+<!--footer시작-->
+<footer id="mFooter">
+</footer>
+<!--footer끝-->
 </div>
 <!--전체끝-->
 </body>

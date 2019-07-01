@@ -1,4 +1,7 @@
 @charset "utf-8";
+#container{
+    padding-top: 0;
+ }
 
 /*상단메뉴 hover*/
 .gnb .gnbAct .on4{
@@ -241,3 +244,10 @@ figure.snip1283.hover figcaption {
 
 
 
+/*모바일관련*/
+#mobi{
+    display: none;
+}
+#mFooter{
+    display: none;
+}
